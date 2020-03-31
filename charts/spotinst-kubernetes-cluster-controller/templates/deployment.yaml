@@ -56,9 +56,9 @@ spec:
         env:
         - name: SPOTINST_TOKEN
           valueFrom:
-            configMapKeyRef:
-              name: {{ .Chart.Name }}-config
-              key: spotinst.token
+            secretKeyRef:
+              name: {{ .Chart.Name }}-secret
+              key: token
         - name: SPOTINST_ACCOUNT
           valueFrom:
             configMapKeyRef:

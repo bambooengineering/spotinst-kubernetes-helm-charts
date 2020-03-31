@@ -9,7 +9,6 @@ data:
   #
   # TODO(liran): Remove the `spotinst.` prefix.
   # ---------------------------------------------------------------------------
-  spotinst.token: {{ required "spotinst.token is missing" .Values.spotinst.token }}
   spotinst.account: {{ required "spotinst.account is missing" .Values.spotinst.account }}
   # ---------------------------------------------------------------------------
   # Configuration.
